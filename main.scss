@@ -90,14 +90,172 @@ header {
     justify-content: space-between;
 }
 
-//PE Footer
+//PE Jumbo Tron
 //
 //  Markup:
-//        <div class="usa-banner">
-//			<div class="container">
-//				<img src="https://18f.gsa.gov/assets/img/global/usa-flag.png" alt="U.S. flag">
-//				<p>An official website of the United States government</p>
-//			</div>
-//		</div>
+// <section class="pe_jumbo_tron">
+//     <div class="pe_jumbo_tron_container">
+//         <h1>Item one title</h1>
+//          <p>sub item description quisque ut nisi maecenas nec odio et ante tincidunt tempus.</p>
+//             <div class="input-group">
+//                 <span class="input-group-addon" id="basic-addon1">@</span>
+//                 <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+//             </div>
+//     </div>
+// </section>
 //
 // Styleguide 1.0.2
+.pe_jumbo_tron {
+    position:relative;
+    width: 100%;
+    min-height: 295px;
+    padding:20px;
+    font-family:'Roboto', arial, sans-serif;
+    background-color: #f6f6f6;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .pe_jumbo_tron_container {
+        position: absolute;
+        text-align: center;
+        max-width: 670px;
+        width: 100%;
+        top:40%;
+        left:50%;
+        -moz-transform: translate(-50%0,-50%);
+        -ms-transform: translate(-50%0,-50%);
+        -o-transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%0,-50%);
+        transform: translate(-50%,-50%);
+
+        h1 {
+            font-family:'Roboto', arial, sans-serif;
+            font-weight: 300;
+            font-size: 50px;
+            color: #555;
+        }
+    }
+}
+
+//PE Sub Nav
+//
+//  Markup:
+// <section class="pe_sub_nav flex_row row_center justify_center">
+//     <a href="#" class="pe_sub_nav_item pe_sub_nav_item_active">Logos</a>
+//     <a href="#" class="pe_sub_nav_item">Colors</a>
+//     <a href="#" class="pe_sub_nav_item">Fonts</a>
+//     <a href="#" class="pe_sub_nav_item">Images</a>
+//     <div class="pe_sub_nav_item pe_drop_menu">More
+//         <div class="pe_drop_menu_block position_right">
+//             <a href="#" class="pe_drop_menu_item">People</a>
+//             <a href="#" class="pe_drop_menu_item">Guidelines</a>
+//             <a href="#" class="pe_drop_menu_item">Press</a>
+//         </div>
+//     </div>
+// </section>
+//
+// Styleguide 1.0.3
+.pe_sub_nav {
+    position:relative;
+    width: 100%;
+    height: 50px;
+    padding:0 10px;
+    background-color: #f6f6f6;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .pe_sub_nav_item {
+        position:relative;
+        font-family: 'Roboto', arial, sans-serif;
+        font-weight: 500;
+        color: #444;
+        padding: 15px;
+        margin: 0 5px;
+        text-transform: uppercase;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: none;
+            background-color: #fdfdfd;
+        }
+    }
+
+    .pe_sub_nav_item_active {
+
+        &:after {
+            content:"";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom:0;
+            height: 2px;
+            background-color: #e70000;
+        }
+    }
+}
+
+.pe_drop_menu {
+    &:hover {
+        .pe_drop_menu_block {
+            display:block;
+        }
+    }
+}
+.pe_drop_menu_block {
+    display: none;
+    position: absolute;
+    top: 80%;
+    min-width: 150px;
+    background-color: #fcfcfc;
+    border:thin solid #ddd;
+    border-radius: 4px;
+    padding-top:8px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    .pe_drop_menu_item {
+        color:#444;
+        display: block;
+        padding: 5px 10px;
+        font-size: 12px;
+        &:hover {
+            color: white;
+            text-decoration: none;
+            background-color: #0CBCAA;
+        }
+    }
+}
+
+.position_right {
+    right:0;
+}
+
+.flex_row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.row_center {
+    -webkit-align-items: center;
+    align-items: center;
+}
+.justify_center {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.even_spaced {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
