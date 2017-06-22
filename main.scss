@@ -1,7 +1,4 @@
 @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
-
-
-
 // Header
 //
 // 
@@ -13,6 +10,89 @@
 // PE header
 //
 //  Markup:
+// <header>
+//     <div class="header_container flex_row row_center split_ends">
+//         <div class="flex_row row_center">
+//             <img class="header_logo" src="/assets/img/pe_icon.png" />
+//             <div class="header_divider"></div>
+//             <div class="header_title">Assets</div>
+//         </div>
+//         <div class="flex_row row_center">
+//             <a href="" class="header_item">Sign in</a>
+//         </div>
+//     </div>
+// </header>
+//
+// Styleguide 1.0.1
+header {
+    font-family:'Roboto', arial, sans-serif;
+    width: 100%;
+    background-color: white;
+    border-bottom: thin solid #eee;
+    .header_container {
+        position: relative;
+        height: 64px;
+        padding:0 20px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        .header_logo {
+            max-height: 25px;
+            width: auto;
+        }
+        .header_divider {
+            height:25px;
+            width:2px;
+            margin:0 10px;
+            background-color: #555;
+        }
+        .header_title {
+            color: #444;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .header_item {
+            font-family:'Roboto', arial, sans-serif;
+            color:#888;
+            padding-right:10px;
+            text-transform: uppercase;
+            &:last-child {
+                padding-right: 0;
+            }
+            &:hover {
+                color:#444;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.flex_row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row_center {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.split_ends {
+    width: 100%;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+//PE Footer
+//
+//  Markup:
 //        <div class="usa-banner">
 //			<div class="container">
 //				<img src="https://18f.gsa.gov/assets/img/global/usa-flag.png" alt="U.S. flag">
@@ -20,23 +100,4 @@
 //			</div>
 //		</div>
 //
-// Styleguide 1.0.1
-.usa-banner {
-    background-color: #ccc;
-    height: 20px;
-    .container {
-        img {
-            float: left;
-            margin-right: 10px;
-            margin-left: 8px;
-            margin-top: 1px;
-            max-width: 100%;
-            height: 18px;
-        }
-        p {
-            margin: 3px 0;
-            display: inline-block;
-            font-size: 12px;
-        }
-    }
-}
+// Styleguide 1.0.2

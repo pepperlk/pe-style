@@ -33,6 +33,8 @@ gulp.task('styleguide:generate', ["copy-components"], function (done) {
                 '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>',
                 '<script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js" ></script>',
                 '<script src="/scripts/style.js" ></script>',
+                '<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">',
+                '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">',
                 '<link rel="import" href="/bower_components/polymer/polymer.html">',
                 '<link rel="import" href="/elements/elements.html">'
             ],
