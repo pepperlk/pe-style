@@ -1,0 +1,28 @@
+{
+  "name": "pe-style",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "grunt-gulp": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-copy": "^1.0.0",
+    "gulp-sass": "^3.1.0",
+    "sc5-styleguide": "^1.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepperlk/pe-style.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pepperlk/pe-style/issues"
+  },
+  "homepage": "https://github.com/pepperlk/pe-style#readme"
+}

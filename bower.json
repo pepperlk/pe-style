@@ -1,0 +1,20 @@
+{
+    "name": "blm-style",
+    "description": "",
+    "main": "index.js",
+    "authors": [],
+    "license": "ISC",
+    "homepage": "",
+    "ignore": [
+        "*",
+        "!dist/",
+        "!dist/**/*"
+    ],
+    "devDependencies": {
+        "bootstrap-sass": "^3.3.7",
+        "polymer": "^1.7.0"
+    },
+    "dependencies": {
+
+    }
+}
