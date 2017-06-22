@@ -25,14 +25,14 @@
 //
 // Styleguide 1.0.1
 header {
-    font-family:'Roboto', arial, sans-serif;
+    font-family: 'Roboto', arial, sans-serif;
     width: 100%;
     background-color: white;
     border-bottom: thin solid #eee;
     .header_container {
         position: relative;
         height: 64px;
-        padding:0 20px;
+        padding: 0 20px;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -41,9 +41,9 @@ header {
             width: auto;
         }
         .header_divider {
-            height:25px;
-            width:2px;
-            margin:0 10px;
+            height: 25px;
+            width: 2px;
+            margin: 0 10px;
             background-color: #555;
         }
         .header_title {
@@ -52,21 +52,22 @@ header {
             font-weight: 400;
         }
         .header_item {
-            font-family:'Roboto', arial, sans-serif;
-            color:#888;
-            padding-right:10px;
+            font-family: 'Roboto', arial, sans-serif;
+            color: #888;
+            padding-right: 10px;
             text-transform: uppercase;
             &:last-child {
                 padding-right: 0;
             }
             &:hover {
-                color:#444;
+                color: #444;
                 text-decoration: none;
             }
         }
     }
 }
 
+/*support css*/
 .flex_row {
     display: -webkit-box;
     display: -moz-box;
@@ -106,31 +107,29 @@ header {
 //
 // Styleguide 1.0.2
 .pe_jumbo_tron {
-    position:relative;
+    position: relative;
     width: 100%;
     min-height: 295px;
-    padding:20px;
-    font-family:'Roboto', arial, sans-serif;
+    padding: 20px;
+    font-family: 'Roboto', arial, sans-serif;
     background-color: #f6f6f6;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
     .pe_jumbo_tron_container {
         position: absolute;
         text-align: center;
         max-width: 670px;
         width: 100%;
-        top:40%;
-        left:50%;
-        -moz-transform: translate(-50%0,-50%);
-        -ms-transform: translate(-50%0,-50%);
-        -o-transform: translate(-50%,-50%);
-        -webkit-transform: translate(-50%0,-50%);
-        transform: translate(-50%,-50%);
-
+        top: 40%;
+        left: 50%;
+        -moz-transform: translate(-50%0, -50%);
+        -ms-transform: translate(-50%0, -50%);
+        -o-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%0, -50%);
+        transform: translate(-50%, -50%);
         h1 {
-            font-family:'Roboto', arial, sans-serif;
+            font-family: 'Roboto', arial, sans-serif;
             font-weight: 300;
             font-size: 50px;
             color: #555;
@@ -157,17 +156,16 @@ header {
 //
 // Styleguide 1.0.3
 .pe_sub_nav {
-    position:relative;
+    position: relative;
     width: 100%;
     height: 50px;
-    padding:0 10px;
+    padding: 0 10px;
     background-color: #f6f6f6;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
     .pe_sub_nav_item {
-        position:relative;
+        position: relative;
         font-family: 'Roboto', arial, sans-serif;
         font-weight: 500;
         color: #444;
@@ -178,49 +176,47 @@ header {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         cursor: pointer;
-
         &:hover {
             text-decoration: none;
             background-color: #fdfdfd;
         }
     }
-
     .pe_sub_nav_item_active {
-
         &:after {
-            content:"";
+            content: "";
             position: absolute;
             left: 0;
             right: 0;
-            bottom:0;
+            bottom: 0;
             height: 2px;
             background-color: #e70000;
         }
     }
 }
 
+/*support css*/
 .pe_drop_menu {
     &:hover {
         .pe_drop_menu_block {
-            display:block;
+            display: block;
         }
     }
 }
+
 .pe_drop_menu_block {
     display: none;
     position: absolute;
     top: 80%;
     min-width: 150px;
     background-color: #fcfcfc;
-    border:thin solid #ddd;
+    border: thin solid #ddd;
     border-radius: 4px;
-    padding-top:8px;
+    padding-top: 8px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
     .pe_drop_menu_item {
-        color:#444;
+        color: #444;
         display: block;
         padding: 5px 10px;
         font-size: 12px;
@@ -233,7 +229,7 @@ header {
 }
 
 .position_right {
-    right:0;
+    right: 0;
 }
 
 .flex_row {
@@ -247,15 +243,120 @@ header {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 .row_center {
     -webkit-align-items: center;
     align-items: center;
 }
+
 .justify_center {
     -webkit-justify-content: center;
     justify-content: center;
 }
+
 .even_spaced {
     -webkit-justify-content: space-between;
     justify-content: space-between;
+}
+
+//PE Newsboard brand card
+//
+//  Markup:
+// <section class="brand_card_container flex_row flex_wrap">
+//     <div class="brand_card">
+//         <a href="#" class="brand_card_content">
+//             <div class="brand_card_bg_img" style="background:url('https://pbs.twimg.com/profile_images/789231391149961216/bjZso2yH.jpg')"></div>
+//             <div class="brand_card_name">Pitchengine</div>
+//         </a>
+//     </div>
+//     <div class="brand_card">
+//         <a href="#" class="brand_card_content">
+//             <div class="brand_card_bg_img" style="background:url('https://d1qb2nb5cznatu.cloudfront.net/startups/i/1306724-38fb505032d8032a2fd1135b0b10675b-medium_jpg.jpg?buster=1467742563')"></div>
+//             <div class="brand_card_name">Pitchengine</div>
+//         </a>
+//     </div>
+//     <div class="brand_card">
+//         <a href="#" class="brand_card_content">
+//             <div class="brand_card_bg_img" style="background:url('http://c767204.r4.cf2.rackcdn.com/ba8c116c-191d-40f7-9308-ec67a23c2474_300.png')"></div>
+//             <div class="brand_card_name">Pitchengine</div>
+//         </a>
+//     </div>
+//     <div class="brand_card">
+//         <a href="#" class="brand_card_content">
+//             <div class="brand_card_bg_img" style="background:url('http://c767204.r4.cf2.rackcdn.com/272930ba-eff4-43a1-918f-881e0790e7bb.jpg')"></div>
+//             <div class="brand_card_name">Pitchengine</div>
+//         </a>
+//     </div>
+// </section>
+//
+// Styleguide 1.0.4
+.brand_card_container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    .brand_card_content {
+        color:#111;
+        display: block;
+        border: thin solid #ddd;
+        border-radius: 2px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .brand_card {
+        position: relative;
+        max-width: 310px;
+        width: 25%;
+        padding: 0 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 20px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        .brand_card_bg_img {
+            width: 100%;
+            height: 230px;
+            background-position: center !important;
+            -moz-background-size: cover !important;
+            -o-background-size: cover !important;
+            -webkit-background-size: cover !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-position: top center !important;
+        }
+        .brand_card_name {
+            padding: 15px;
+            font-weight: 500;
+            font-family: 'Roboto', arial, sans-serif;
+            font-size: 22px;
+            border-top: thin solid #ddd;
+        }
+        @media only screen and (max-width: 767px) {
+            width: 50%;
+            max-width: none;
+        }
+        @media only screen and (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}
+
+/*support css*/
+.flex_row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex_wrap {
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
