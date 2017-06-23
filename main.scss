@@ -23,7 +23,8 @@
 //     </div>
 // </header>
 //
-// Styleguide 1.0.1
+// Styleguide 1.0.1gulp watch
+
 header {
     font-family: 'Roboto', arial, sans-serif;
     width: 100%;
@@ -94,7 +95,7 @@ header {
 //PE Jumbo Tron
 //
 //  Markup:
-// <section class="pe_jumbo_tron">
+// <section class="pe_jumbo_tron flex_row row_center justify_center">
 //     <div class="pe_jumbo_tron_container">
 //         <h1>Item one title</h1>
 //          <p>sub item description quisque ut nisi maecenas nec odio et ante tincidunt tempus.</p>
@@ -117,28 +118,44 @@ header {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     .pe_jumbo_tron_container {
-        position: absolute;
         text-align: center;
         max-width: 670px;
         width: 100%;
-        top: 50%;
-        left: 50%;
         padding: 20px;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        -moz-transform: translate(-50%0, -50%);
-        -ms-transform: translate(-50%0, -50%);
-        -o-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%0, -50%);
-        transform: translate(-50%, -50%);
         h1 {
+            margin:0 0 10px 0;
             font-family: 'Roboto', arial, sans-serif;
             font-weight: 300;
             font-size: 50px;
             color: #555;
         }
     }
+}
+
+/*support css*/
+.flex_row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row_center {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.justify_center {
+    -webkit-justify-content: center;
+    justify-content: center;
 }
 
 //PE Sub Nav
