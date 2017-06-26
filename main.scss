@@ -1,11 +1,10 @@
 @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
-// Header
+// Style Guide
 //
 // 
 //
 // Styleguide 1.0.0
 
-/**/
 
 // PE header
 //
@@ -23,7 +22,7 @@
 //     </div>
 // </header>
 //
-// Styleguide 1.0.1gulp watch
+// Styleguide 1.0.1
 
 header {
     font-family: 'Roboto', arial, sans-serif;
@@ -337,7 +336,8 @@ header {
         box-sizing: border-box;
         .brand_card_bg_img {
             width: 100%;
-            height: 230px;
+            max-height: 268px;
+            height: 20vw;
             background-position: center !important;
             -moz-background-size: contain !important;
             -o-background-size: contain !important;
@@ -345,6 +345,14 @@ header {
             background-size: contain !important;
             background-repeat: no-repeat !important;
             background-position: top center !important;
+
+            @media only screen and (max-width: 767px) {
+                height:35vw;
+            }
+
+            @media only screen and (max-width: 480px) {
+                height:60vw;
+            }
         }
         .brand_card_name {
             padding: 15px;
