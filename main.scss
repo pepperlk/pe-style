@@ -5,6 +5,76 @@
 //
 // Styleguide 1.0.0
 
+// PE Core CSS
+//
+// Markup:
+// Add to main css file
+//
+// Styleguide 1.0.1
+.flex_row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flex_col {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.flex_wrap {
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.row_center {
+    -webkit-align-items: center;
+    align-items: center;
+}
+.justify_left {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+.justify_right {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+.justify_center {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.split_ends {
+    width: 100%;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.even_spaced {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.space_around {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.position_right {
+    right: 0;
+}
+.position_left {
+    left: 0;
+}
 
 // PE header
 //
@@ -22,7 +92,7 @@
 //     </div>
 // </header>
 //
-// Styleguide 1.0.1
+// Styleguide 1.0.2
 
 header {
     font-family: 'Roboto', arial, sans-serif;
@@ -105,7 +175,7 @@ header {
 //     </div>
 // </section>
 //
-// Styleguide 1.0.2
+// Styleguide 1.0.3
 .pe_jumbo_tron {
     position: relative;
     width: 100%;
@@ -174,7 +244,7 @@ header {
 //     </div>
 // </section>
 //
-// Styleguide 1.0.3
+// Styleguide 1.0.4
 .pe_sub_nav {
     position: relative;
     width: 100%;
@@ -316,7 +386,7 @@ header {
 //     </div>
 // </section>
 //
-// Styleguide 1.0.4
+// Styleguide 1.0.5
 .brand_card_container {
     max-width: 1240px;
     width: 100%;
@@ -442,23 +512,29 @@ header {
 // <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 // <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 //
-// Styleguide 1.0.5
+// Styleguide 1.0.6
 
 
 // Colors
 //
 // markup:
 // #17b9a9
+// #e9e625
+// #ed2185
 // #c71e56
 // #3e215a
 // #4f5693
 // #17132a
-// #e9e625
-// #ed2185
 //
 // sg-wrapper:
 // <div style="background-color:#17b9a9; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
 //   #17b9a9
+// </div>
+// <div style="background-color:#e9e625; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #e9e625
+// </div>
+// <div style="background-color:#ed2185; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #ed2185
 // </div>
 // <div style="background-color:#c71e56; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
 //   #c71e56
@@ -472,14 +548,8 @@ header {
 // <div style="background-color:#17132a; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
 //   #17132a
 // </div>
-// <div style="background-color:#e9e625; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
-//   #e9e625
-// </div>
-// <div style="background-color:#ed2185; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
-//   #ed2185
-// </div>
 //
-// Styleguide 1.0.6
+// Styleguide 1.0.7
 .bg_clr_green {
     background-color: #17b9a9;
 }
