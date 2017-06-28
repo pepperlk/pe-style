@@ -284,25 +284,33 @@ header {
 // <section class="brand_card_container flex_row flex_wrap">
 //     <div class="brand_card">
 //         <a href="#" class="brand_card_content">
-//             <div class="brand_card_bg_img" style="background:url('/assets/img/logo_placeholder.png')"></div>
+//             <div class="brand_card_img_container flex_row row_center justify_center">
+//                 <img class="sizer" src="/assets/img/sizer300.png" />
+//                 <img class="brand_card_logo" src="/assets/img/logo_placeholder.png" /></div>
 //             <div class="brand_card_name">Pitchengine</div>
 //         </a>
 //     </div>
 //     <div class="brand_card">
 //         <a href="#" class="brand_card_content">
-//             <div class="brand_card_bg_img" style="background:url('/assets/img/logo_placeholder.png')"></div>
+//             <div class="brand_card_img_container flex_row row_center justify_center">
+//                 <img class="sizer" src="/assets/img/sizer300.png" />
+//                 <img class="brand_card_logo" src="/assets/img/logo_placeholder.png" /></div>
 //             <div class="brand_card_name">Pitchengine</div>
 //         </a>
 //     </div>
 //     <div class="brand_card">
 //         <a href="#" class="brand_card_content">
-//             <div class="brand_card_bg_img" style="background:url('/assets/img/logo_placeholder.png')"></div>
+//             <div class="brand_card_img_container flex_row row_center justify_center">
+//                 <img class="sizer" src="/assets/img/sizer300.png" />
+//                 <img class="brand_card_logo" src="/assets/img/logo_placeholder.png" /></div>
 //             <div class="brand_card_name">Pitchengine</div>
 //         </a>
 //     </div>
 //     <div class="brand_card">
 //         <a href="#" class="brand_card_content">
-//             <div class="brand_card_bg_img" style="background:url('/assets/img/logo_placeholder.png')"></div>
+//             <div class="brand_card_img_container flex_row row_center justify_center">
+//                 <img class="sizer" src="/assets/img/sizer300.png" />
+//                 <img class="brand_card_logo" src="/assets/img/logo_placeholder.png" /></div>
 //             <div class="brand_card_name">Pitchengine</div>
 //         </a>
 //     </div>
@@ -333,6 +341,34 @@ header {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
+        .brand_card_img_container {
+            position: relative;
+            max-width: 268px;
+            width:100%;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+            .sizer {
+                max-width: 100%;
+            }
+
+            .brand_card_logo {
+                position: absolute;
+                width: 100%;
+                max-width: 80%;
+                left:50%;
+                top:50%;
+                -moz-transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%,-50%);
+                -o-transform: translate(-50%,-50%);
+                -webkit-transform: translate(-50%,-50%);
+                transform: translate(-50%,-50%);
+            }
+            @media only screen and (max-width: 767px) {
+                max-width: none;
+            }
+        }
         .brand_card_bg_img {
             width: 100%;
             max-height: 268px;
@@ -382,9 +418,17 @@ header {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 .flex_wrap {
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+}
+.row_center {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.justify_center {
+    -webkit-justify-content: center;
+    justify-content: center;
 }
