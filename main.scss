@@ -432,3 +432,72 @@ header {
     -webkit-justify-content: center;
     justify-content: center;
 }
+
+//Fonts
+//
+// Roboto font - link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"
+// Material font icons - link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+//
+// Markup:
+// <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+// <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+//
+// Styleguide 1.0.5
+
+
+// Colors
+//
+// markup:
+// #17b9a9
+// #c71e56
+// #3e215a
+// #4f5693
+// #17132a
+// #e9e625
+// #ed2185
+//
+// sg-wrapper:
+// <div style="background-color:#17b9a9; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #17b9a9
+// </div>
+// <div style="background-color:#c71e56; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #c71e56
+// </div>
+// <div style="background-color:#3e215a; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #3e215a
+// </div>
+// <div style="background-color:#4f5693; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #4f5693
+// </div>
+// <div style="background-color:#17132a; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #17132a
+// </div>
+// <div style="background-color:#e9e625; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #e9e625
+// </div>
+// <div style="background-color:#ed2185; text-align:center; color:white;padding:20px;border-radius:4px;margin-bottom:10px;">
+//   #ed2185
+// </div>
+//
+// Styleguide 1.0.6
+.bg_clr_green {
+    background-color: #17b9a9;
+}
+.bg_clr_red {
+    background-color: #c71e56;
+}
+.bg_clr_purple {
+    background-color: #3e215a;
+}
+.bg_clr_ltpurple {
+    background-color: #4f5693;
+}
+.bg_clr_dkpurple {
+    background-color: #17132a;
+}
+.bg_clr_yellow {
+    background-color: #e9e625;
+}
+.bg_clr_pink {
+    background-color: #ed2185;
+}
