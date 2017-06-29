@@ -553,6 +553,12 @@ header {
 .bg_clr_green {
     background-color: #17b9a9;
 }
+.bg_clr_yellow {
+    background-color: #e9e625;
+}
+.bg_clr_pink {
+    background-color: #ed2185;
+}
 .bg_clr_red {
     background-color: #c71e56;
 }
@@ -565,9 +571,81 @@ header {
 .bg_clr_dkpurple {
     background-color: #17132a;
 }
-.bg_clr_yellow {
-    background-color: #e9e625;
+
+
+//  Button Styles
+//
+//  Button 1
+//
+//  Button 2
+//
+//  Button 3
+//
+//  Button 4
+//
+//  markup:
+//  <button class="btn_1">Button 1</button>
+//  <button class="btn_2">Button 2</button>
+//  <button class="btn_3">Button 3</button>
+//  <button class="btn_4">Button 4</button>
+//
+// Styleguide 1.0.8
+button {
+  margin:0 8px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border:none;
 }
-.bg_clr_pink {
+
+.btn_1 {
+    color: white;
+    background-color: #17b9a9;
+    &:hover {
+      background-color: #48cabd;
+    }
+    &:active {
+      background-color: #17b9a9;
+    }
+  }
+
+  .btn_2 {
+    color: white;
     background-color: #ed2185;
-}
+    &:hover {
+      background-color: #f54199;
+    }
+    &:active {
+      background-color: #ed2185;
+    }
+  }
+
+  .btn_3 {
+    color: #444;
+    background-color: transparent;
+    &:hover {
+      color:black;
+      background-color: #eaeaea;
+    }
+    &:active {
+      background-color: #ddd;
+    }
+  }
+
+.btn_4 {
+    cursor: not-allowed;
+    color: #BFBFBF;
+    background-color: #F2F2F2;
+
+    &:hover {
+        background-color: #F2F2F2;
+    }
+    &:focus {
+        border:none;
+        outline:none;
+    }
+    &:active {
+        border:none;
+        outline:none;
+    }
+  }
