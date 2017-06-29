@@ -75,6 +75,29 @@
 .position_left {
     left: 0;
 }
+.pointer {
+    cursor: pointer;
+}
+
+//Fonts
+//
+// Roboto font - link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"
+// Material font icons - link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+//
+// Markup:
+// <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+// <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+//
+// Styleguide 1.0.2
+
+// CDN
+//
+// Bootstrap - link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
+//
+// Markup:
+// <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+//
+// Styleguide 1.0.3
 
 // PE header
 //
@@ -92,7 +115,7 @@
 //     </div>
 // </header>
 //
-// Styleguide 1.0.2
+// Styleguide 1.0.4
 
 header {
     font-family: 'Roboto', arial, sans-serif;
@@ -175,7 +198,7 @@ header {
 //     </div>
 // </section>
 //
-// Styleguide 1.0.3
+// Styleguide 1.0.5
 .pe_jumbo_tron {
     position: relative;
     width: 100%;
@@ -244,7 +267,7 @@ header {
 //     </div>
 // </section>
 //
-// Styleguide 1.0.4
+// Styleguide 1.0.6
 .pe_sub_nav {
     position: relative;
     width: 100%;
@@ -386,7 +409,7 @@ header {
 //     </div>
 // </section>
 //
-// Styleguide 1.0.5
+// Styleguide 1.0.7
 .brand_card_container {
     max-width: 1240px;
     width: 100%;
@@ -503,18 +526,6 @@ header {
     justify-content: center;
 }
 
-//Fonts
-//
-// Roboto font - link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet"
-// Material font icons - link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
-//
-// Markup:
-// <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-// <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-//
-// Styleguide 1.0.6
-
-
 // Colors
 //
 // markup:
@@ -549,7 +560,7 @@ header {
 //   #17132a
 // </div>
 //
-// Styleguide 1.0.7
+// Styleguide 1.0.8
 .bg_clr_green {
     background-color: #17b9a9;
 }
@@ -589,7 +600,7 @@ header {
 //  <button class="btn_3">Button 3</button>
 //  <button class="btn_disable">Button disable</button>
 //
-// Styleguide 1.0.8
+// Styleguide 1.0.9
 button {
   margin:0 8px;
   padding: 10px;
