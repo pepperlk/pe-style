@@ -587,7 +587,7 @@ header {
 //  <button class="btn_1">Button 1</button>
 //  <button class="btn_2">Button 2</button>
 //  <button class="btn_3">Button 3</button>
-//  <button class="btn_4">Button 4</button>
+//  <button class="btn_disable">Button disable</button>
 //
 // Styleguide 1.0.8
 button {
@@ -632,7 +632,7 @@ button {
     }
   }
 
-.btn_4 {
+.btn_disable {
     cursor: not-allowed;
     color: #BFBFBF;
     background-color: #F2F2F2;
